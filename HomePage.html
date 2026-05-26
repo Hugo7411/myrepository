@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Main CSS -->
+    <link href="../../StyleSheet.css" rel="stylesheet" />
+
+    <!-- Slider CSS -->
+    
+    <link href="Homepageslider.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <!-- Menu Button -->
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰ Menu
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="nav-links" id="navLinks">
+
+            <a href="HomePage.html" class="nav-button">
+                Home
+            </a>
+
+            <a href="Games.html" class="nav-button">
+                Games
+            </a>
+
+            <a href="Products.html" class="nav-button">
+                Products
+            </a>
+
+            <a href="Shopping cart.html" class="nav-button">
+                🛒
+            </a>
+
+            <a href="Contact Page.html" class="nav-button">
+                Contact us
+            </a>
+
+        </div>
+
+    </nav>
+    <!-- Hero Slider -->
+    <section class="slider">
+
+        <!-- Slide 1 -->
+        <div class="slide active" style="background-image:url('50909070mix.png');">
+            <div class="overlay">
+                <h1>Latest products</h1>
+                <p>Limited-time tech bargains with unbeatable savings!</p>
+                <a href="Products.html" class="btn">View Top Products →</a>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide" style="background-image:url('mix1.png');">
+            <div class="overlay">
+                <h1>Games</h1>
+                <p>Expierience the Game of the year winners from the last 10 years.</p>
+                <a href="Games.html" class="btn">Shop Now →</a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide" style="background-image: url('images/slide3.jpg');">
+            <div class="overlay">
+                <h1>Contact Us for any Questions</h1>
+                <p>Make special orders for your convienvience.</p>
+                <a href="Contact Page.html" class="btn">Contact us →</a>
+            </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </section>
+
+    <!-- Featured Products & Games -->
+  
+    <section class="card-section">
+
+        <!--Product-->
+        <div class="card" onclick="openPopup(this)">
+            <div class="card-image">
+                <img src="5090.PNG" />
+            </div>
+            <button class="add-btn">Add to cart</button>
+        </div>
+
+        <!--product-->
+        <div class="card">
+            <div class="card-image" onclick="openPopup(this)">
+                <img src="9070XT.jpg" alt="Product">
+            </div>
+            <button class="add-btn">Add to cart</button>
+
+        </div>
+
+        <!--Product-->
+        <div class="card" onclick="openPopup(this)">
+            <div class="card-image">
+                <img src="AM5.jpg" />
+            </div>
+            <button class="add-btn">Add to cart</button>
+        </div>
+
+        <!--Product-->
+        <div class="card" onclick="openPopup(this)">
+            <div class="card-image">
+                <img src="ClairObscur.jpg" />
+            </div>
+            <button class="add-btn">Add to cart</button>
+        </div>
+
+        <!--Product-->
+        <div class="card" onclick="openPopup(this)">
+            <div class="card-image">
+                <img src="EGS_TheWitcher3WildHuntCompleteEdition_CDPROJEKTRED_S1_2560x1440-82eb5cf8f725e329d3194920c0c0b64f.jpg" />
+            </div>
+            <button class="add-btn">Add to cart</button>
+        </div>
+
+        <!--Product-->
+        <div class="card" onclick="openPopup(this)">
+            <div class="card-image">
+                <img src="eldenringHD-scaled.jpg" /> 
+            </div>
+            <button class="add-btn">Add to cart</button>
+        </div>
+
+     
+
+    </section>
+
+
+    <!-- Image Popup -->
+    <div id="imagePopup" class="popup">
+
+        <span class="close" onclick="closePopup()">×</span>
+
+        <img class="popup-content" id="popupImg">
+
+    </div>
+    <!-- Scripts -->
+
+    <script src="homepageslider.js"></script>
+    <script src="allpagesjava.js"></script>
+</body>
+</html>

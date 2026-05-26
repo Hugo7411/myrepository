@@ -1,0 +1,66 @@
+﻿/*styling form navigation button*/
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: darkgray;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+    .nav-button:hover {
+        background-color: red;
+      
+    }
+
+    body{
+        background-color: darkgrey;
+    }
+
+    /*-------------------------------------------------*/
+
+/* NAVBAR */
+.navbar {
+    position: relative;
+    padding: 15px 20px;
+}
+
+/* MENU BUTTON */
+.menu-toggle {
+    background-color: dimgray;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu-toggle:hover {
+    background-color: red;
+}
+/* LINKS CONTAINER */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    background: rgba(0,0,0,0.95);
+    padding: 15px;
+    border-radius: 15px;
+    z-index: 1000;
+}
+
+    /* SHOW MENU */
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* NAV BUTTONS */
+    .nav-links .nav-button {
+        margin: 5px 0;
+    }
